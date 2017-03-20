@@ -49,13 +49,14 @@ header {
     padding: 10px 0; }
 
 .hero {
-  width: 100%;
   position: relative;
   background: url(https://static.pexels.com/photos/170/apple-laptop-notebook-notes.jpg);
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  padding-top: 62vh; }
+  padding-top: 62vh;
+  height: 100%;
+  width: 100%; }
   .hero .slogan {
     background: rgba(255, 255, 255, 0.5);
     filter: alpha(opacity=50);
@@ -199,14 +200,13 @@ header {
   width: 100%; }
 
 .buttons {
-  width: 100%;
   margin: 0 auto;
   padding: 50px;
-  text-align: center; }
+  text-align: center;
+  height: 100%;
+  width: 100%; }
 
 .icon-btn {
-  width: 75px;
-  height: 75px;
   border: 0;
   background: #313332;
   margin: 7px;
@@ -217,7 +217,9 @@ header {
   -webkit-border-radius: 10%;
   -moz-border-radius: 10%;
   -ms-border-radius: 10%;
-  border-radius: 10%; }
+  border-radius: 10%;
+  height: 75px;
+  width: 75px; }
 
 .miniature {
   margin: auto; }
@@ -240,8 +242,9 @@ header {
   margin-top: 0px; }
 
 .gallery, .gallery img, .gallery .position, .gallery .people:hover .position, .people:hover .gallery .position, .layer {
-  width: 100%;
-  padding: 0; }
+  padding: 0;
+  height: 100%;
+  width: 100%; }
   .gallery img, .gallery .people:hover .position img, .people:hover .gallery .position img, .layer img, .gallery .position, .layer .position, .gallery .people:hover .position, .people:hover .gallery .position, .layer .people:hover .position, .people:hover .layer .position {
     height: 250px; }
 
@@ -266,13 +269,13 @@ header {
   justify-content: center; }
 
 .layer button {
-  width: 45px;
-  height: 45px;
   border: 0;
   -webkit-border-radius: 15%;
   -moz-border-radius: 15%;
   -ms-border-radius: 15%;
-  border-radius: 15%; }
+  border-radius: 15%;
+  height: 45px;
+  width: 45px; }
 
 .image:hover .layer {
   display: block;
@@ -284,13 +287,13 @@ header {
   margin: 30px auto;
   margin-top: 100px; }
   .people img, .people .position, .people:hover .position {
-    width: 250px;
-    height: 250px;
     margin-left: 30px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
-    border-radius: 50%; }
+    border-radius: 50%;
+    height: 250px;
+    width: 250px; }
     .people img:hover, .people .position:hover {
       cursor: pointer; }
 
@@ -303,8 +306,9 @@ header {
   display: none;
   position: absolute;
   cursor: pointer;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5); }
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%; }
 
 .people:hover .position {
   display: block;
@@ -336,10 +340,10 @@ header {
   font-weight: normal;
   background: #00C7E8;
   font-size: 25px;
-  width: 45px;
-  height: 45px;
   line-height: 45px;
-  border-radius: 0; }
+  border-radius: 0;
+  height: 45px;
+  width: 45px; }
 
 .contact {
   padding: 15px; }
@@ -448,10 +452,11 @@ footer {
     height: 250px;
     display: block;
     background: none;
-    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    height: 100%;
+    width: 100%; }
 
   .box {
     display: flex;
@@ -459,33 +464,32 @@ footer {
     justify-content: center; }
 
   .layer button {
-    width: 45px;
-    height: 45px;
     border: 0;
     -webkit-border-radius: 15%;
     -moz-border-radius: 15%;
     -ms-border-radius: 15%;
-    border-radius: 15%; }
+    border-radius: 15%;
+    height: 45px;
+    width: 45px; }
 
   .position {
     color: white;
-    width: 250px;
-    height: 250px;
     margin-left: 30px;
     display: block;
     display: none;
     position: absolute;
     cursor: pointer;
-    width: 100%;
     background: rgba(0, 0, 0, 0.5);
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
-    border-radius: 50%; }
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    height: 100%;
+    width: 100%; }
 
   .people:hover .position {
-    width: 250px;
-    height: 250px;
     margin-left: 30px;
     display: block;
     display: flex;
@@ -494,7 +498,9 @@ footer {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
-    border-radius: 50%; }
+    border-radius: 50%;
+    height: 250px;
+    width: 250px; }
 
   footer h1 {
     position: relative; }
