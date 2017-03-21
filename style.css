@@ -45,17 +45,18 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     font-family: "Quicksand", sans-serif; }
-  header img, header .position, header .people:hover .position, .people:hover header .position {
+  header img {
     padding: 10px 0; }
 
 .hero {
-  width: 100%;
   position: relative;
   background: url(https://static.pexels.com/photos/170/apple-laptop-notebook-notes.jpg);
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  padding-top: 62vh; }
+  padding-top: 62vh;
+  height: 100%;
+  width: 100%; }
   .hero .slogan {
     background: rgba(255, 255, 255, 0.5);
     filter: alpha(opacity=50);
@@ -111,41 +112,31 @@ header {
 .col-12 {
   width: 100%; }
 
-.col-m-1 {
-  width: 8.33%; }
-
-.col-m-2 {
-  width: 16.66%; }
-
-.col-m-3 {
-  width: 25%; }
-
-.col-m-4 {
-  width: 33.33%; }
-
-.col-m-5 {
-  width: 41.66%; }
-
-.col-m-6 {
-  width: 50%; }
-
-.col-m-7 {
-  width: 58.33%; }
-
-.col-m-8 {
-  width: 66.66%; }
-
-.col-m-9 {
-  width: 75%; }
-
-.col-m-10 {
-  width: 83.33%; }
-
-.col-m-1 {
-  width: 91.66%; }
-
-.col-m-12 {
-  width: 100%; }
+@media (min-width: 768px) {
+  .col-m-1 {
+    width: 8.33%; }
+  .col-m-2 {
+    width: 16.66%; }
+  .col-m-3 {
+    width: 25%; }
+  .col-m-4 {
+    width: 33.33%; }
+  .col-m-5 {
+    width: 41.66%; }
+  .col-m-6 {
+    width: 50%; }
+  .col-m-7 {
+    width: 58.33%; }
+  .col-m-8 {
+    width: 66.66%; }
+  .col-m-9 {
+    width: 75%; }
+  .col-m-10 {
+    width: 83.33%; }
+  .col-m-1 {
+    width: 91.66%; }
+  .col-m-12 {
+    width: 100%; } }
 
 .col-offset-0 {
   margin-left: 0; }
@@ -199,14 +190,13 @@ header {
   width: 100%; }
 
 .buttons {
-  width: 100%;
   margin: 0 auto;
   padding: 50px;
-  text-align: center; }
+  text-align: center;
+  height: 100%;
+  width: 100%; }
 
 .icon-btn {
-  width: 75px;
-  height: 75px;
   border: 0;
   background: #313332;
   margin: 7px;
@@ -217,7 +207,9 @@ header {
   -webkit-border-radius: 10%;
   -moz-border-radius: 10%;
   -ms-border-radius: 10%;
-  border-radius: 10%; }
+  border-radius: 10%;
+  height: 75px;
+  width: 75px; }
 
 .miniature {
   margin: auto; }
@@ -239,10 +231,11 @@ header {
   margin-bottom: 50px;
   margin-top: 0px; }
 
-.gallery, .gallery img, .gallery .position, .gallery .people:hover .position, .people:hover .gallery .position, .layer {
-  width: 100%;
-  padding: 0; }
-  .gallery img, .gallery .people:hover .position img, .people:hover .gallery .position img, .layer img, .gallery .position, .layer .position, .gallery .people:hover .position, .people:hover .gallery .position, .layer .people:hover .position, .people:hover .layer .position {
+.gallery, .gallery img, .layer, .position {
+  padding: 0;
+  height: 100%;
+  width: 100%; }
+  .gallery img, .layer img, .position img {
     height: 250px; }
 
 .image {
@@ -262,61 +255,70 @@ header {
 
 .box {
   display: flex;
-  align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
 
 .layer button {
-  width: 45px;
-  height: 45px;
   border: 0;
   -webkit-border-radius: 15%;
   -moz-border-radius: 15%;
   -ms-border-radius: 15%;
-  border-radius: 15%; }
+  border-radius: 15%;
+  height: 45px;
+  width: 45px; }
 
 .image:hover .layer {
   display: block;
   display: flex;
-  align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
 
 .people {
   margin: 30px auto;
   margin-top: 100px; }
-  .people img, .people .position, .people:hover .position {
-    width: 250px;
-    height: 250px;
+  .people img {
     margin-left: 30px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
-    border-radius: 50%; }
-    .people img:hover, .people .position:hover {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px; }
+    .people img:hover {
       cursor: pointer; }
 
 .job {
   text-align: center; }
 
 .position {
+  height: 250px;
   color: white;
   display: block;
   display: none;
   position: absolute;
   cursor: pointer;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5); }
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%; }
 
 .people:hover .position {
   display: block;
+  margin-left: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
   display: flex;
-  align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
 
 .about {
   margin: 40px;
   padding: 30px; }
 
-.phone img, .phone .position, .phone .people:hover .position, .people:hover .phone .position {
+.phone img {
   height: 250px;
   margin: 30px; }
 
@@ -336,10 +338,10 @@ header {
   font-weight: normal;
   background: #00C7E8;
   font-size: 25px;
-  width: 45px;
-  height: 45px;
   line-height: 45px;
-  border-radius: 0; }
+  border-radius: 0;
+  height: 45px;
+  width: 45px; }
 
 .contact {
   padding: 15px; }
@@ -370,40 +372,28 @@ footer {
 @media (max-width: 767px) {
   .col-s-1 {
     width: 8.33%; }
-
   .col-s-2 {
     width: 16.66%; }
-
   .col-s-3 {
     width: 25%; }
-
   .col-s-4 {
     width: 33.33%; }
-
   .col-s-5 {
     width: 41.66%; }
-
   .col-s-6 {
     width: 50%; }
-
   .col-s-7 {
     width: 58.33%; }
-
   .col-s-8 {
     width: 66.66%; }
-
   .col-s-9 {
     width: 75%; }
-
   .col-s-10 {
     width: 83.33%; }
-
   .col-s-11 {
     width: 91.66%; }
-
   .col-s-12 {
     width: 100%; }
-
   header {
     height: 253px;
     text-align: center; }
@@ -414,9 +404,8 @@ footer {
     header li {
       display: block;
       text-align: center; }
-    header img, header .position, header .people:hover .position, .people:hover header .position {
+    header img {
       right: 50%; }
-
   .hero {
     position: relative;
     background: url(https://static.pexels.com/photos/170/apple-laptop-notebook-notes.jpg);
@@ -428,74 +417,66 @@ footer {
       padding: 10px;
       position: absolute;
       top: 40%; }
-
   .featured h1 {
     margin-top: 0;
     padding-top: 0; }
-
   .about {
     margin: 0;
     padding: 10px; }
-
-  .phone img, .phone .position, .phone .people:hover .position, .people:hover .phone .position {
+  .phone img {
     max-height: 250px;
     margin: 0; }
-
   .sentence {
     text-align: center; }
-
   .layer {
     height: 250px;
     display: block;
     background: none;
-    width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center; }
-
+    height: 100%;
+    width: 100%; }
   .box {
     display: flex;
-    align-items: center;
-    justify-content: center; }
-
+    justify-content: center;
+    align-items: center; }
   .layer button {
-    width: 45px;
-    height: 45px;
     border: 0;
     -webkit-border-radius: 15%;
     -moz-border-radius: 15%;
     -ms-border-radius: 15%;
-    border-radius: 15%; }
-
+    border-radius: 15%;
+    height: 45px;
+    width: 45px; }
   .position {
     color: white;
-    width: 250px;
-    height: 250px;
     margin-left: 30px;
     display: block;
     display: none;
     position: absolute;
     cursor: pointer;
-    width: 100%;
     background: rgba(0, 0, 0, 0.5);
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
-    border-radius: 50%; }
-
-  .people:hover .position {
-    width: 250px;
+    border-radius: 50%;
     height: 250px;
+    width: 250px;
+    height: 100%;
+    width: 100%; }
+  .people:hover .position {
     margin-left: 30px;
     display: block;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
-    border-radius: 50%; }
-
+    border-radius: 50%;
+    height: 250px;
+    width: 250px; }
   footer h1 {
     position: relative; }
   footer h1:after {
@@ -506,18 +487,17 @@ footer {
     background: white;
     position: absolute;
     right: 0; }
-
   .phone {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
-
   .people {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 30px auto;
     margin-top: 100px; }
-
   .contact {
     text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */
