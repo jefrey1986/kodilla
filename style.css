@@ -50,7 +50,7 @@ header {
 
 .hero {
   position: relative;
-  background: url(https://static.pexels.com/photos/510070/pexels-photo-510070.jpeg);
+  background: url("images/hero.jpeg");
   background-size: cover;
   background-position: center;
   overflow: hidden;
