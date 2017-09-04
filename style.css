@@ -423,7 +423,7 @@ footer {
 
   .hero {
     position: relative;
-    background: url(https://static.pexels.com/photos/170/apple-laptop-notebook-notes.jpg);
+    background: url("images/hero.jpeg");
     background-size: cover;
     background-position: center;
     overflow: hidden;
